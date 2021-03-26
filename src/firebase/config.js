@@ -4,7 +4,7 @@
   
   // Your web app's Firebase configuration
   var firebaseConfig = {
-    apiKey: "AIzaSyBQhaoKQxm5gjI3i4xM6nGzO8isDIyaYRQ",
+    apiKey: process.env.REACT_APP_API_KEY,
     authDomain: "firegram-ccf16.firebaseapp.com",
     projectId: "firegram-ccf16",
     storageBucket: "firegram-ccf16.appspot.com",
