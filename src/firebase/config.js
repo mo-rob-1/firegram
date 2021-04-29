@@ -2,9 +2,11 @@ import firebase from "firebase/app";
 import "firebase/storage";
 import "firebase/firestore";
 
+const dotenv = require("dotenv").config();
+
 // Your web app's Firebase configuration
 var firebaseConfig = {
-  apiKey: "AIzaSyAq5foP8ikcJV1TuB1i1KgyBNhD3BMk-8c",
+  apiKey: process.env.REACT_APP_API_KEY,
   authDomain: "firegram-react-c3eb6.firebaseapp.com",
   projectId: "firegram-react-c3eb6",
   storageBucket: "firegram-react-c3eb6.appspot.com",
