@@ -1,21 +1,21 @@
-  import firebase from 'firebase/app';
-  import 'firebase/storage';
-  import 'firebase/firestore';
-  
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: process.env.REACT_APP_API_KEY,
-    authDomain: "firegram-ccf16.firebaseapp.com",
-    projectId: "firegram-ccf16",
-    storageBucket: "firegram-ccf16.appspot.com",
-    messagingSenderId: "741979595487",
-    appId: "1:741979595487:web:c43fb03db0e27394247f6a"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
+import firebase from "firebase/app";
+import "firebase/storage";
+import "firebase/firestore";
 
-  const projectStorage = firebase.storage();
-  const projectFirestore = firebase.firestore();
-  const timestamp = firebase.firestore.FieldValue.serverTimestamp;
+// Your web app's Firebase configuration
+var firebaseConfig = {
+  apiKey: "AIzaSyAq5foP8ikcJV1TuB1i1KgyBNhD3BMk-8c",
+  authDomain: "firegram-react-c3eb6.firebaseapp.com",
+  projectId: "firegram-react-c3eb6",
+  storageBucket: "firegram-react-c3eb6.appspot.com",
+  messagingSenderId: "326215684227",
+  appId: "1:326215684227:web:8ae89ce3758ac97ced4bb6",
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
 
-  export { projectStorage, projectFirestore, timestamp };
+const projectStorage = firebase.storage();
+const projectFirestore = firebase.firestore();
+const timestamp = firebase.firestore.FieldValue.serverTimestamp;
+
+export { projectStorage, projectFirestore, timestamp };
